@@ -1,0 +1,20 @@
+#include <stdio.h>
+long calculateFactorial(int num)
+{
+long result = 1;
+// Loop to multiply all integers from 1 to num
+for (int i = 1; i <= num; i++)
+{
+result *= i; // Multiply result by the current value of i
+}
+return result;
+}
+int main()
+{
+int inputNum;
+printf("Enter a number: ");
+scanf("%d", &inputNum);
+printf("Factorial of %d is %ld\n", inputNum,
+calculateFactorial(inputNum));
+return 0;
+}
